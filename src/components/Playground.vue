@@ -5,7 +5,7 @@
       :min-date="new Date()"
       :max-date="maxDate" 
       prevent-min-max-navigation
-      placeholder="Selecteaza data de preluare si predare"
+      placeholder="Selecteaza data"
       />
     </div>
   </template>
