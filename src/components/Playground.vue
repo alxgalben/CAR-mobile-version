@@ -2,7 +2,6 @@
 <template>
     <div>
       <Datepicker v-model="date" 
-      range multi-calendars 
       :min-date="new Date()"
       :max-date="maxDate" 
       prevent-min-max-navigation

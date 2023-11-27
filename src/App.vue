@@ -30,6 +30,7 @@ import Playground from './components/Playground.vue';
 
       </li>
       <li class="list-group-item"><Playground /></li>
+      <li class="list-group-item"><Playground /></li>
     </ul>
     <button type="button" class="btn btn-warning btn-search">Search</button>
   </div>
