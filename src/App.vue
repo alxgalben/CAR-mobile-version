@@ -22,7 +22,8 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
           </label>
         </div>
 
-        <select v-if="showField" class="form-select form-select-sm" aria-label=".form-select-sm example" style="height: 40px; margin-top: 5px;">
+        <select v-if="showField" class="form-select form-select-sm" aria-label=".form-select-sm example"
+          style="height: 40px; margin-top: 5px;">
           <option selected>Locatie de predare</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -34,15 +35,18 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
         <DatepickerPreluare />
         <div class="control-section time-format">
           <div class="control_wrapper time_range">
-              <div class="tabs-wrap">
-                  <div class="wrap">
-              <ejs-timepicker id="timepicker" :placeholder="waterMarkText" :value='value' :step='interval' :format='customFormat'></ejs-timepicker>
+            <div class="tabs-wrap">
+              <div class="wrap">
+                <ejs-timepicker id="timepicker" :placeholder="waterMarkText" :value='value' :step='interval'
+                  :format='customFormat'></ejs-timepicker>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
-</div>
       </li>
-      <li class="list-group-item"><DatepickerPredare /></li>
+      <li class="list-group-item">
+        <DatepickerPredare />
+      </li>
     </ul>
     <button type="button" class="btn btn-warning btn-search">Search</button>
   </div>
@@ -58,7 +62,8 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
         </select>
       </li>
       <li class="list-group-item">
-        <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="height: 40px; margin-top: 5px;">
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+          style="height: 40px; margin-top: 5px;">
           <option selected>Locatie de predare</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -85,31 +90,31 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
 }
 
 @media only screen and (max-width: 900px) {
-    
-    .search-box {
-      width: 90%;
-      margin: 10px auto 0;
-      border-radius: 0;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
 
-    .form-select-sm:hover {
-      cursor: pointer;
-    }
-
-    .btn-search {
-      width: 95%;
-      border-radius: 0;
-      margin: 10px auto;
-    }
-
-    .privat {
-      width: 90%;
-      margin: 15px auto 0;
-      text-align: right;
-    }
+  .search-box {
+    width: 90%;
+    margin: 10px auto 0;
+    border-radius: 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  .form-select-sm:hover {
+    cursor: pointer;
+  }
+
+  .btn-search {
+    width: 95%;
+    border-radius: 0;
+    margin: 10px auto;
+  }
+
+  .privat {
+    width: 90%;
+    margin: 15px auto 0;
+    text-align: right;
+  }
+}
 </style>
 
 <script>
