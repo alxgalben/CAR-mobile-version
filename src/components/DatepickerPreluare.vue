@@ -6,6 +6,7 @@
       :max-date="maxDate" 
       prevent-min-max-navigation
       :enable-time-picker="false"
+      autocomplete="off"
       placeholder="Selecteaza data de preluare"
       />
 
@@ -13,6 +14,7 @@
       time-picker  
       minutes-increment="15" 
       minutes-grid-increment="15"
+      autocomplete="off"
       placeholder="Selecteaza ora de preluare"
       style="margin-top: 10px;"
       />
