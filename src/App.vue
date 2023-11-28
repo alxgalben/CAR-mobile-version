@@ -1,5 +1,6 @@
 <script setup>
-import Playground from './components/Playground.vue';
+import DatepickerPreluare from './components/DatepickerPreluare.vue';
+import DatepickerPredare from './components/DatepickerPredare.vue';
 
 </script>
 
@@ -29,8 +30,19 @@ import Playground from './components/Playground.vue';
         </select>
 
       </li>
-      <li class="list-group-item"><Playground /></li>
-      <li class="list-group-item"><Playground /></li>
+      <li class="list-group-item">
+        <DatepickerPreluare />
+        <div class="control-section time-format">
+          <div class="control_wrapper time_range">
+              <div class="tabs-wrap">
+                  <div class="wrap">
+              <ejs-timepicker id="timepicker" :placeholder="waterMarkText" :value='value' :step='interval' :format='customFormat'></ejs-timepicker>
+          </div>
+        </div>
+    </div>
+</div>
+      </li>
+      <li class="list-group-item"><DatepickerPredare /></li>
     </ul>
     <button type="button" class="btn btn-warning btn-search">Search</button>
   </div>

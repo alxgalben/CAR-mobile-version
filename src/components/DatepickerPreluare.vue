@@ -5,7 +5,13 @@
       :min-date="new Date()"
       :max-date="maxDate" 
       prevent-min-max-navigation
-      placeholder="Selecteaza data"
+      :enable-time-picker="false"
+      placeholder="Selecteaza data de preluare"
+      />
+
+      <Datepicker v-model="time" time-picker 
+      placeholder="Selecteaza ora de preluare"
+      style="margin-top: 10px;"
       />
     </div>
   </template>
@@ -15,6 +21,10 @@
   import Datepicker from '@vuepic/vue-datepicker';
   import '@vuepic/vue-datepicker/dist/main.css';
   
-  const date = ref();
+  const date = ref(new Date());
+  const time = ref({
+    hours: new Date().getHours(),
+    minutes: new Date().getMinutes()
+  });
   </script>
   
