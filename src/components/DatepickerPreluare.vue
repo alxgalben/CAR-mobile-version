@@ -6,7 +6,8 @@
       :day-names="['Lu', 'Ma', 'Mi', 'Jo', 'Vi', 'Sa', 'Du']"
       cancel-text="Inchide"
       select-text="Selecteaza"
-      :format-locale="ro" />
+      :format-locale="ro"
+      auto-apply />
 
     <Datepicker v-model="time" :start-time="startTime" time-picker minutes-increment="15" minutes-grid-increment="15"
       autocomplete="off" placeholder="Selecteaza ora de preluare" style="margin-top: 10px;" />
@@ -18,13 +19,14 @@ import { ref } from 'vue';
 import Datepicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
 import { ro } from 'date-fns/locale';
+import { provide } from 'vue';
 
-const date = ref(new Date());
-const startTime = ref({ hours: 0, minutes: 0 });
+const date = ref(addDays(new Date(), 1));
+const startTime = ref({ hours: new Date().getHours(), minutes: 0 });
 
 const time = ref({
   hours: new Date().getHours(),
-  minutes: new Date().getMinutes()
+  minutes: "00"
 });
 
 const format = (date) => {
@@ -34,6 +36,14 @@ const format = (date) => {
 
   return `${day}/${month}/${year}`;
 }
+
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+provide('selectedDate', date);
 
 </script>
   

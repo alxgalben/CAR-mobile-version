@@ -33,16 +33,6 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
       </li>
       <li class="list-group-item">
         <DatepickerPreluare />
-        <div class="control-section time-format">
-          <div class="control_wrapper time_range">
-            <div class="tabs-wrap">
-              <div class="wrap">
-                <ejs-timepicker id="timepicker" :placeholder="waterMarkText" :value='value' :step='interval'
-                  :format='customFormat'></ejs-timepicker>
-              </div>
-            </div>
-          </div>
-        </div>
       </li>
       <li class="list-group-item">
         <DatepickerPredare />
