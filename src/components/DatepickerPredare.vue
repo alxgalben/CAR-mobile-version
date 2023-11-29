@@ -19,8 +19,8 @@ import { ref } from 'vue';
 import { ro } from 'date-fns/locale';
 import Datepicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
-// import { inject } from 'vue';
 
+// import { inject } from 'vue';
 // const selectedDate = inject('selectedDate');
 
 const date = ref(addDays(new Date(), 4));
