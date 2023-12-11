@@ -63,7 +63,7 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
         </select>
       </li>
     </ul>
-    <button type="button" class="btn btn-warning btn-search">Search2</button>
+    <button type="button" class="btn btn-warning btn-search">Search</button>
     <button @click="toggleSearchBoxes" type="button" class="btn btn-dark btn-transfer-privat">{{ buttonText }}</button>
   </div>
 </div>
