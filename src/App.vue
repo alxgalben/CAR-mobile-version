@@ -5,6 +5,7 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
 </script>
 
 <template>
+  <div class="all" style="height: 100vh;">
   <div v-if="!showSecondSearchBox" class="card search-box">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
@@ -39,6 +40,7 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
       </li>
     </ul>
     <button type="button" class="btn btn-warning btn-search">Search</button>
+    <button @click="toggleSearchBoxes" type="button" class="btn btn-dark btn-transfer-privat">{{ buttonText }}</button>
   </div>
 
   <div v-if="showSecondSearchBox" class="card search-box">
@@ -61,12 +63,10 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
         </select>
       </li>
     </ul>
-    <button type="button" class="btn btn-warning btn-search">Search</button>
-  </div>
-
-  <div class="privat">
+    <button type="button" class="btn btn-warning btn-search">Search2</button>
     <button @click="toggleSearchBoxes" type="button" class="btn btn-dark btn-transfer-privat">{{ buttonText }}</button>
   </div>
+</div>
 </template>
 
 <style>
@@ -76,14 +76,56 @@ import DatepickerPredare from './components/DatepickerPredare.vue';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
-@media only screen and (max-width: 900px) {
+
+.all {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-box {
+  width: 25%;
+  margin-left: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-search {
+    width: 95%;
+    border-radius: 0;
+    margin: 10px auto;
+  }
+  
+  .btn-transfer-privat {
+    width: 95%;
+    border-radius: 0;
+    margin: 10px auto;
+    margin-top: 0px;
+  }
+
+  @media only screen and (max-width: 1310px) {
+    .search-box {
+  width: 35%;
+  margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-box {
+  width: 45%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+  .all {
+    align-items: start;
+  }
 
   .search-box {
     width: 90%;
-    margin: 10px auto 0;
+    margin: 100px auto 0;
     border-radius: 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
