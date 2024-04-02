@@ -44,7 +44,8 @@
     </div>
     <div style="text-align: right;">
         <h6 class="card-title" style="font-size: 14px !important; margin-bottom: 0 !important; color: rgba(33, 37, 41, 0.75);">from</h6> 
-        <h5 class="card-subtitle" style="font-size: 18px !important; margin-bottom: 0;"><span style="font-weight: bold; font-size: 1.25rem;">14 € </span><span style="font-size: 14px !important; color: rgba(33, 37, 41, 0.75);">/ day</span></h5>
+        <h5 class="card-subtitle" style="font-size: 18px !important; margin-bottom: 0;"><span style="font-weight: bold; font-size: 1.5rem;">5230 € </span></h5>
+        <h6 class="card-title" style="font-size: 14px !important; margin-bottom: 0 !important; color: rgba(33, 37, 41, 0.75);">for 365 days</h6> 
     </div>
 </div>
 
@@ -91,6 +92,18 @@
   </div>
 
   </div>
+
+  <div class="accordion fixed-bottom" id="accordionExample" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong style="font-size: 25px; margin-right: 35px;">45€</strong>
+        <span class="btn btn-warning next"><strong>NEXT</strong></span>
+      </button>
+    </h2>
+  </div>
+</div>
+
 </div>
 </template>
 
