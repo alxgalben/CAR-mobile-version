@@ -1,0 +1,203 @@
+  @media only screen and (max-width: 767px) {
+    .navbar-search {
+        margin: 20px;
+      }
+
+    .hk-breadcrumb {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .hk-breadcrumb ol, .hk-breadcrumb select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .hk-breadcrumb .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .hk-breadcrumb .btn {
+      margin: 0 5px;
+    }
+
+    .hk-pg-wrapper {
+        margin-top: 70px;
+    }
+
+    #reservationInfo {
+        text-align: left;
+    }
+
+    #reservationDetails {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #reservationInfo {
+        text-align: left;
+    }
+
+    #idr {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #okidr {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #data1,
+    #ora1,
+    #locatie1 {
+        margin-bottom: 10px;
+    }
+
+    #id_driver_out {
+        margin-bottom: 10px;
+    }
+    
+    #km_predare_new {
+        margin-bottom: 10px;
+    }
+
+    #data2,
+    #ora2,
+    #locatie2,
+    #id_driver_in {
+        margin-bottom: 10px;
+    }
+
+    #spatiu-sub-detalii-auto {
+        display: none;
+    }
+
+    #spatiu-sub-detalii-auto-2 {
+        display: none;
+    }
+
+    #auto,
+    #auto_fizic {
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    td[colspan="3"], td[colspan="1"], td[colspan="4"] {
+        display: block;
+        width: 250%;
+        text-align: center;
+    }
+
+    td[colspan="3"] {
+        background-color: #70AD47;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+
+    td[colspan="1"] {
+        background-color: #70AD47;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    td[colspan="4"] {
+        background-color: yellow;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #decont-title {
+        margin: 0 auto;
+    }
+
+    .col-sm-12:first-child {
+        margin-bottom: 10px;
+    }
+
+    .panel-body {
+        margin-top: 80px;
+    }
+
+    div[class^="col-md-"]:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    div[class^="col-md-"] {
+        padding-top: 0 !important;
+    }
+
+    #br1,
+    #br2,
+    #br3,
+    #br4,
+    #br5 {
+        display: none;
+    }
+
+    #alte-informatii {
+        margin-bottom: 20px !important; 
+    }
+
+    #quiz-label,
+    #quiz {
+        margin-bottom: 20px;
+    }
+
+    #submit-save-client {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    table[data-category="tip-tarif"] {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table[data-category="tip-tarif"] tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    table[data-category="tip-tarif"] td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    table[data-category="tip-tarif"] td:nth-child(even) {
+        background-color: #70AD47;
+        color: #000;
+        font-weight: bold;
+    }
+
+    table[data-category="tip-tarif"] td:nth-child(odd) {
+        background-color: #FFFF00;
+        color: #000;
+        font-weight: bold;
+    }
+    
+  }
+  
