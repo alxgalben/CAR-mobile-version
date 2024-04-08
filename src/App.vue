@@ -363,16 +363,28 @@
 
                         <tr>
                           <td class="stil_coloana_discount_detalii">inchiriere</td>
+                        </tr>
+                        <tr>
                           <td>
-                            <input type="text" name="inchiriere" id="inchiriere" value="140"
-                              class="form-control date_importante input_decont" />
+                            <input type="text" name="inchiriere" id="inchiriere" value="140" class="form-control date_importante input_decont" />
                           </td>
-
+                        </tr>
+                        <tr>
                           <td><span id="tarifbaza_preview"></span></td>
+                        </tr>
+                        <tr>
                           <td></td>
+                        </tr>
+                        <tr>
                           <td></td>
+                        </tr>
+                        <tr>
                           <td></td>
+                        </tr>
+                        <tr>
                           <td></td>
+                        </tr>
+                        <tr>
                           <td></td>
                         </tr>
 
