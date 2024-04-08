@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="all" style="height: 100vh;">
 
 
@@ -1390,35 +1389,6 @@
             </div>
 
         </div>
-=======
-<div class="all" style="height: 100vh;">
-  <div class="car-preview-card card" style="width: 22.2rem; height: 37.2rem;">
-  <div class="card-body">
-    <div class="image-preview card" style="width: 20rem; height: 20rem; overflow: hidden; position: relative;">
-      <ul style="list-style: none; padding: 16px; display: flex; justify-content: space-between; z-index: 1000;">
-        <li>
-          <img :src="require('./coming_soon.jpeg')" alt="Coming Soon" class="eticheta">
-        </li>
-        <li>
-          <img :src="require('./eco_car.jpeg')" alt="Eco Car" class="eticheta">
-        </li>
-        <li>
-          <img :src="require('./new_model.jpeg')" alt="New Model" class="eticheta">
-        </li>
-        <li>
-          <img :src="require('./premium_car.jpeg')" alt="Premium Car" class="eticheta">
-        </li>
-        <li>
-          <img :src="require('./promo_car.jpeg')" alt="Promo Car" class="eticheta">
-        </li>
-      </ul>
-
-
-    <div class="slider" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-height: fit-content;">
-        <img src="https://rentacar.travis.ro/media/volkswagen_passat_2019_1jpg.jpg" alt="Random Car Image" style="width: 100%; height: 100%; object-fit: cover;">
-        <img src="https://rentacar.travis.ro/media/toyota_rav4_2022_1jpg.jpg" alt="Random Car Image 2" style="width: 100%; height: 100%; object-fit: cover;">
-        <!-- Add more images as needed -->
->>>>>>> eab304c87e1138c178baa41fb6c253748cb12c67
     </div>
 </form>
                 </div>
