@@ -58,69 +58,72 @@
 
                   <!-- Breadcrumb -->
                   <nav class="hk-breadcrumb" aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-light bg-transparent" style="direction: rtl;">
-              <li>
-                <ul class="icons-list"
-                  style="color: #000; margin-right: 20px; direction: ltr; margin-left: 10px; margin-right: 10px;">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-at"
-                        style="color: #000; font-size: 35px;"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-right" style="color: #000;">
-                      <li>Client</li>
-                      <li>
-                        <a style="color: #000 !important;" target="_blank"
-                          href="https://car.travis.ro/?pag=rezervari&pag2=trimite-email&tip=client&ide=6&rezervare=102420"><i
-                            class="fa fa-at "></i>Email confirmare </a>
-                      </li>
-                      <li>
-                        <a style="color: #000 !important;" target="_blank"
-                          href="https://car.travis.ro/?pag=rezervari&pag2=trimite-email&tip=client&ide=7&rezervare=102420"><i
-                            class="fa fa-at "></i>Email anulare </a>
-                      </li>
-                      <li>Furnizor</li>
-                      <li>
-                        <a style="color: #000 !important;" target="_blank"
-                          href="https://car.travis.ro/?pag=rezervari&pag2=trimite-email&tip=furnizor&ide=8&rezervare=102420"><i
-                            class="fa fa-at "></i>Email comanda </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <select id="status" name="status" class="form-control" style="height: 40px; direction: ltr;">
-                  <option value="confirmed2">Confirmata - fara plata</option>
-                  <option value="confirmed3">Confirmata - cu plata</option>
-                  <option value="confirmed">Finalizata</option>
-                  <option value="retrasa">Retrasa</option>
-                  <option value="pending">In asteptare (furnizor)</option>
-                  <option value="transfer">Transfer</option>
-                  <option value="termen_lung">Termen lung</option>
-                  <option value="review">Decontat</option>
+                    <ol class="breadcrumb breadcrumb-light bg-transparent" style="direction: rtl;">
+                      <div class="icon-container">
+                    <li>
+                        <ul class="icons-list" style="color: #000; margin-right: 20px; direction: ltr; margin-left: 10px; margin-right: 10px;">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-at" style="color: #000; font-size: 35px;"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-right" style="color: #000;">
+                                    <li>Client</li>
+                                    <li>
+                                        <a style="color: #000 !important;" target="_blank" href="https://car.travis.ro/?pag=rezervari&pag2=trimite-email&tip=client&ide=6&rezervare=102420">
+                                            <i class="fa fa-at "></i>Email confirmare
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="color: #000 !important;" target="_blank" href="https://car.travis.ro/?pag=rezervari&pag2=trimite-email&tip=client&ide=7&rezervare=102420">
+                                            <i class="fa fa-at "></i>Email anulare
+                                        </a>
+                                    </li>
+                                    <li>Furnizor</li>
+                                    <li>
+                                        <a style="color: #000 !important;" target="_blank" href="https://car.travis.ro/?pag=rezervari&pag2=trimite-email&tip=furnizor&ide=8&rezervare=102420">
+                                            <i class="fa fa-at "></i>Email comanda
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <select id="status" name="status" class="form-control" style="direction: ltr; margin-bottom: 0px !important;">
+                            <option value="confirmed2">Confirmata - fara plata</option>
+                            <option value="confirmed3">Confirmata - cu plata</option>
+                            <option value="confirmed">Finalizata</option>
+                            <option value="retrasa">Retrasa</option>
+                            <option value="pending">In asteptare (furnizor)</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="termen_lung">Termen lung</option>
+                            <option value="review">Decontat</option>
+                            <option value="anulat">Anulata</option>
+                        </select>
+                    </li>
+                    <li>
+                        <div class="icon_pending" style="width: 200px; height: 40px; margin-top: 0; margin-left: 10px; margin-right: 10px; background-color: yellow;"></div>
+                    </li>
+                </div>
 
-                  <option value="anulat">Anulata</option>
-                </select>
-              </li>
-              <li>
-                <div class="icon_pending"
-                  style="width: 200px; height: 40px; margin-top: 0; margin-left: 10px; margin-right:10px;"></div>
-              </li>
-              <li>
-                <a id="btn2" href="?pag=rezervari&pag2=printeaza&idr=102420" target="_blank"
-                  class="btn btn-primary btn-labeled btn-labeled-right bg-blue heading-btn"> <i class="fa fa-print"></i>
-                  Printeaza</a>
-              </li>
-              <li>
-                <a id="btn1" href="?pag=rezervari"
-                  class="btn btn-primary btn-labeled btn-labeled-right bg-blue heading-btn"
-                  style="margin-right: 10px;">Afiseaza rezervari</a>
-              </li>
-              <li>
-                <a id="butLinkUnic" data-toggle="modal" data-target="#modalLinkUnic"
-                  class="btn btn-primary btn-labeled btn-labeled-right bg-blue heading-btn"
-                  style="margin-right: 10px; color: #fff;">Link TASK</a> &nbsp; &nbsp;
-              </li>
-            </ol>
+
+                      <div class="btn-container">
+                          <li>
+                              <a id="btn2" href="?pag=rezervari&pag2=printeaza&idr=102420" target="_blank" class="btn btn-primary btn-labeled btn-labeled-right bg-blue heading-btn">
+                                  <i class="fa fa-print"></i> Printeaza
+                              </a>
+                          </li>
+                          <li>
+                              <a id="btn1" href="?pag=rezervari" class="btn btn-primary btn-labeled btn-labeled-right bg-blue heading-btn" style="margin-right: 10px;">
+                                  Afiseaza rezervari
+                              </a>
+                          </li>
+                          <li>
+                              <a id="butLinkUnic" data-toggle="modal" data-target="#modalLinkUnic" class="btn btn-primary btn-labeled btn-labeled-right bg-blue heading-btn" style="margin-right: 10px; color: #fff;">
+                                  Link TASK
+                              </a>
+                          </li>
+                      </div>
+
+                    </ol>
                   </nav>
 
 

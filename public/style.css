@@ -24,6 +24,17 @@
       margin: 0 5px;
     }
 
+    .btn-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-container {
+        display: flex;
+        align-items: center;
+    }
+    
+
     .hk-pg-wrapper {
         margin-top: 70px;
     }
